@@ -155,3 +155,27 @@ repetition_num = int (input())
 receptionNumber (repetition_num)
 
 num2dac (0)
+
+def showSin (amplitude, sF):
+    for i in amplitude:
+        curr = int (round (i * 127) + 128)
+        out = num2dac (curr)
+        GPIO.output (Ds, out)
+        time.sleep ( float (1 / int (sF))
+                    
+freq = int (input ('Set frequency'))
+sF   = int (input ('Set sampling frequency'))
+t    = int (input ('Set time'))
+                    
+tim       = np.arange (0, t, float (1/sF))
+amplitude = np.sin (2*math.pi * tim*freq)
+plt.plot (tim, amplitude)
+plt.title ('sin')
+plt.xlabel ('time')
+plt.ylabel ('amplitude sin(time)')
+plt.show()
+show_sin (amplitude, sF)
+
+
+
+            
