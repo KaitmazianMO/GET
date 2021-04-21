@@ -1,4 +1,6 @@
 Hola, mundo!
 
+Master was there!
+
 Здесь был Петя!
 Здесь был Вася!
